@@ -29,7 +29,7 @@ type KanjiResponse struct {
 	} `json:"data"`
 }
 
-const Token = "10cadee5-b614-4f03-816a-08a6ef337e55"
+var Token = os.Getenv("TOKEN")
 
 func main() {
 	for i := 1; i < 10; i++ {
